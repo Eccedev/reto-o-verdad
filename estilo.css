@@ -1,0 +1,122 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  background-color: #222;
+  background-image: url("bgfire.JPG");
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  background: #222;
+  text-align: center;
+  position: relative;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    animation: border-glow 1s infinite alternate;
+}
+@keyframes border-glow {
+  0% {
+      border-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+      border-color: #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+button {
+  background: linear-gradient(to bottom, #945fff, #ffff65);
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 10px;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #ffff65, #945fff);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+  text-align: center;
+  margin: 50px 0;    
+}
+
+.chs #truth, #dare{
+  margin: 10px;    
+}
+  h2 {
+    font-family: Tahoma;
+    font-weight: bold;
+    color: #ffe033 ;
+    text-align: center;
+    margin: 10px;
+  }
+  h3 {
+    font-family: Tahoma;
+    font-weight: bold;
+    color: #fff ;
+    text-align: center;
+    margin: 10px;
+  }
+  .claseh3 {
+    font-size: 1.2rem;
+  }
+  span {
+    border-radius: 10px;
+  }
+  
+  #price {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Tahoma;
+    border: 2px solid #cccccc;
+    padding: 15px 30px;
+    color: #cfc9c9;
+  }
+  
+  #dare {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Tahoma;
+    border: 2px solid #399656;
+    padding: 15px 30px;
+    color: #00FF00;
+    display: none;
+  }
+  
+  #next {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: Tahoma;
+    font-weight: bold;
+    border: 2px solid red;
+    padding: 15px 30px;
+    color: rgb(176, 4, 4);
+    display: none;
+  }
+  
+  #truth {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Tahoma;
+    border: 2px solid #a51a1a;
+    padding: 15px 30px;
+    color: #FF0000;
+    display: none;
+    margin-left: 10px;
+  }
+  
