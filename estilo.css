@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
@@ -21,6 +21,7 @@ body {
     border: 2px solid transparent;
     border-radius: 10px;
     animation: border-glow 1s infinite alternate;
+  margin: 0.5rem;
 }
 @keyframes border-glow {
   0% {
@@ -119,4 +120,24 @@ h1 {
     display: none;
     margin-left: 10px;
   }
+
+footer {
+  bottom: 0;
+  width: 360px; 
+  text-align: center;  /* Maintain centered text if needed */
+  color: #fff;
+  font-size: 1rem;
+  background-color: #381a1a7c;
+  border-radius: 10px;
+  margin-top: 0.3rem;
+}
+
+.a-eccedev {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px dodgerblue black;
+    border-radius: 10px;
+    animation: border-glow 1s infinite alternate;
+}
   
