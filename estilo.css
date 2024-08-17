@@ -33,24 +33,6 @@ body {
   }
 }
 
-button {
-  background: linear-gradient(to bottom, #945fff, #ffff65);
-  border: none;
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin: 10px;
-}
-
-button:hover {
-  background: linear-gradient(to bottom, #ffff65, #945fff);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-
 h1 {
   text-align: center;
   margin: 50px 0;    
@@ -97,19 +79,8 @@ h1 {
     padding: 15px 30px;
     color: #00FF00;
     display: none;
-  }
-  
-  #next {
-    font-size: 1.2rem;
-    text-align: center;
-    font-family: Tahoma;
-    font-weight: bold;
-    border: 2px solid red;
-    padding: 15px 30px;
-    color: rgb(176, 4, 4);
-    display: none;
-  }
-  
+  } 
+ 
   #truth {
     font-size: 1.5rem;
     text-align: center;
@@ -120,6 +91,62 @@ h1 {
     display: none;
     margin-left: 10px;
   }
+
+
+#next {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 10px;
+  background: linear-gradient(45deg, #ff0000, #c300ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Tahoma;
+  font-weight: bold;
+  padding: 15px 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: none; /* Inicialmente oculto */
+}
+
+#next::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent,
+    rgba(255, 255, 255, 0.445),
+    transparent 30%
+  );
+  animation: rotate 4s linear infinite;
+}
+
+#next::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background: inherit;
+  border-radius: 0.9rem;
+  z-index: -1;
+}
+
+#next:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
 
 footer {
   bottom: 0;
