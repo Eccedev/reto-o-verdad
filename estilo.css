@@ -151,10 +151,10 @@ h1 {
 footer {
   bottom: 0;
   width: 360px; 
-  text-align: center;  /* Maintain centered text if needed */
+  text-align: center; 
   color: #fff;
   font-size: 1rem;
-  background-color: #381a1a7c;
+  background-color: #000000b0;
   border-radius: 10px;
   margin-top: 0.3rem;
 }
